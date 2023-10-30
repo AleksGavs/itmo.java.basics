@@ -6,6 +6,6 @@ public class CalculatorCheck {
         System.out.println(calculator.sum(22.5, 34));
         System.out.println(calculator.division(485, 32));
         System.out.println(calculator.multiplication(23, 12.3));
-        //System.out.println(calculator.subtraction(2147483692, 32);
+        System.out.println(calculator.subtraction(2147483692L, 32));
     }
 }
