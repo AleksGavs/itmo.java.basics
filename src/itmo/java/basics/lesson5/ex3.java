@@ -12,10 +12,10 @@ public class ex3 {
                 "\nПомидоры и огурцы можно встретить в любом доме, в них тоже много витаминов. Ну а картофель и бяка, конечно же, известны всем." +
                 " Из него делают вкусное картофельное пюре. В картофеле много крахмала.";
 
-        displayCensoredVersion(text);
+        displayCensoredVersion(text, "бяка", "[вырезано цензурой]");
     }
 
-    public static void displayCensoredVersion(String text) {
-        System.out.println(text.toLowerCase().replace("бяка", "[вырезано цензурой]"));
+    public static void displayCensoredVersion(String text, String wordToRemove, String wordToPlace) {
+        System.out.println(text.toLowerCase().replace(wordToRemove, wordToPlace));
     }
 }
