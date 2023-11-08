@@ -1,19 +1,23 @@
 package itmo.java.basics.lesson6.ex5;
+public class Child extends Parent {
 
-import java.time.Year;
+    public Child(int age) {
+        this.age = age;
+    }
 
-public class Child extends Parent{
+    public Child() {
+    }
+
     private String name;
+
     @Override
-    protected String getInfo(){
-        super.getInfo();
+    protected void getInfo() {
         System.out.println("Введите своё имя: ");
         name = scanner.next();
-        return name;
     }
 
     @Override
-    public String toString(){
-        return "Имя пользователя - " + this.name + ", возраст пользователя " + this.age + ".";
+    public String toString() {
+        return "Имя пользователя - " + this.name + ".";
     }
 }
