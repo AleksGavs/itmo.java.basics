@@ -9,27 +9,28 @@ public class ex2 {
         }
     }
 
-    public static void isPalyndrom(String word) {
-        word = word.toLowerCase();
-        StringBuilder originalWord = new StringBuilder(word);
-        String reversedWordString = originalWord.reverse().toString();
-        System.out.println(word.equals(reversedWordString));
-    }
-
-
-//    public static void isPalyndrom(String word){
+//    public static void isPalyndrom(String word) {
 //        word = word.toLowerCase();
-//        boolean isPalyndrom = false;
-//        char[] letterArray = word.toCharArray();
-//        int j = letterArray[letterArray.length-1];
-//        for (int i = 0; i < letterArray.length / 2; i++){
-//            if (letterArray[i] != letterArray[j]) {
-//            }
-//            else{
-//                j--;
-//            }
-//            isPalyndrom = true;
-//        }
-//        System.out.println(isPalyndrom);
+//        StringBuilder originalWord = new StringBuilder(word);
+//        String reversedWordString = originalWord.reverse().toString();
+//        System.out.println(word.equals(reversedWordString));
 //    }
+
+
+    public static void isPalyndrom(String word){
+        word = word.toLowerCase();
+        boolean isPalyndrom = false;
+        char[] letterArray = word.toCharArray();
+        int j = letterArray.length-1;
+        for (int i = 0; i < letterArray.length / 2; i++){
+            if (letterArray[i] != letterArray[j]) {
+                break;
+            }
+            else{
+                j--;
+            }
+            isPalyndrom = true;
+        }
+        System.out.println(isPalyndrom);
+    }
 }
